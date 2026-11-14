@@ -51,7 +51,7 @@ mirofish-consumer-simulation/
 
 **1. Get the code and install packages**
 ```bash
-git clone https://github.com/YOUR_USERNAME/mirofish-consumer-simulation.git
+git clone https://github.com/Xcode-Nancy/mirofish-consumer-simulation.git
 cd mirofish-consumer-simulation
 python -m pip install -r requirements.txt
 ```
