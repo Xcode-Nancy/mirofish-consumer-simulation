@@ -1,0 +1,21 @@
+# data: never commit raw or generated data
+data/raw/*
+!data/raw/README.md
+data/processed/
+data/interim/
+outputs/
+reports/
+# python / jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+# secrets
+.env
+*.key
+.DS_Store
+
+# Large raw datasets - keep locally, do not commit
+dataset/*.csv
+data/raw/*.csv

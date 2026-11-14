@@ -1,0 +1,3 @@
+target,products,splits,MAE_simulation,MAE_constant,MAE_star_persistence,RMSE_simulation,RMSE_constant,sim_beats_constant_pct,spearman_sim_mean,spearman_sim_p5,spearman_sim_p95,spearman_star_mean
+neg12,12,200,0.0115,0.0106,0.0124,0.0141,0.0132,9.5,0.0331,-0.4301,0.4136,0.0103
+pos45,12,200,0.0205,0.0196,0.021,0.0251,0.0237,26.0,0.1833,-0.1832,0.5804,0.1976

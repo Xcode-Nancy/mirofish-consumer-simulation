@@ -1,0 +1,35 @@
+Loaded 1429_1.csv: 34,660 rows
+Loaded Datafiniti_Amazon_Consumer_Reviews_of_Amazon_Products.csv: 5,000 rows
+Loaded Datafiniti_Amazon_Consumer_Reviews_of_Amazon_Products_May19.csv: 28,332 rows
+
+Combined: 67,992 rows
+Filled 1,636 missing 'product_name' values from other rows of the same ASIN
+Filled 0 missing 'brand' values from other rows of the same ASIN
+Filled 0 missing 'manufacturer' values from other rows of the same ASIN
+Filled 7,621 missing 'primary_category' values from other rows of the same ASIN
+Filled 0 missing 'categories' values from other rows of the same ASIN
+Recovered a product name from the 'keys' field for 5,124 rows (flag: product_name_recovered)
+
+Dropped 2 rows with no product identity
+Dropped 248 rows with empty/too-short review text (<5 chars)
+Dropped 33 rows with missing/invalid rating
+Review dates: 149 unparseable, 0 in the future -> left blank
+do_recommend missing for 12,557 rows -> do_recommend_filled uses rating>=4 for those
+Removed 7,071 duplicate reviews (same product + user + text)
+
+=== FINAL: 60,638 reviews, 91 products, 7 brands -> dataset\amazon_reviews_clean.csv
+Ratings: {1: 1336, 2: 976, 3: 2587, 4: 13544, 5: 42195}
+Date range: 2009-02-26 to 2019-03-25
+
+Top products by review count:
+product_name
+Fire Tablet, 7 Display, Wi-Fi, 8 GB - Includes Special Offers, Magenta                                    11224
+AmazonBasics AAA Performance Alkaline Batteries (36 Count)                                                 8142
+Echo (White)                                                                                               6975
+amazonfiretv                                                                                               5050
+AmazonBasics AA Performance Alkaline Batteries (48 Count) - Packaging May Vary                             3631
+Amazon Kindle Paperwhite - eBook reader - 4 GB - 6 monochrome Paperwhite - touchscreen - Wi-Fi - black     3176
+All-New Fire HD 8 Tablet, 8 HD Display, Wi-Fi, 16 GB - Includes Special Offers, Magenta                    2814
+Fire HD 8 Tablet with Alexa, 8 HD Display, 16 GB, Tangerine - with Special Offers                          2443
+All-New Fire HD 8 Tablet, 8 HD Display, Wi-Fi, 16 GB - Includes Special Offers, Black                      2367
+Fire Kids Edition Tablet, 7 Display, Wi-Fi, 16 GB, Green Kid-Proof Case                                    1688

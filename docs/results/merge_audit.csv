@@ -1,0 +1,10 @@
+step,rows_before,rows_after,change,note
+load 1429_1.csv,0,34660,34660,
+load Datafiniti_Amazon_Consumer_Rev,0,5000,5000,
+load Datafiniti_Amazon_Consumer_Rev,0,28332,28332,
+concat (same logical table: reviews),67992,67992,0,
+exclude unusable reviews (see unmatched_records.csv),67992,67952,-40,
+deduplicate (product + user + text) across sources,67952,60872,-7080,found_in_sources keeps provenance
+build products master,91,91,0,one row per product_id
+title conflicts,,21,,products with >1 distinct title variant; canonical = most frequent (see conflict_audit.csv)
+join reviews -> products (many_to_one),60872,60872,0,0 reviews without title

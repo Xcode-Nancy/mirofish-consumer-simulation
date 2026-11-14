@@ -1,0 +1,6 @@
+scenario,product,buy_intention,category_avg_intention,delta_vs_baseline_pts,category_delta_pts
+baseline,B018Y229OU,0.9445,0.9463,0.0,0.0
+discount_15pct,B018Y229OU,0.9692,0.9702,2.47,2.39
+price_up_20pct,B018Y229OU,0.8947,0.8979,-4.98,-4.84
+stronger_marketing,B018Y229OU,0.9618,0.963,1.73,1.67
+competitor_price_cut_15pct,B018Y229OU,0.939,0.9409,-0.55,-0.54

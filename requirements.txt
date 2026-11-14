@@ -1,0 +1,26 @@
+# Core pipeline (every script in src/)
+pandas>=2.0
+numpy>=1.26
+matplotlib>=3.8
+tabulate>=0.9        # pandas.to_markdown() in inventory.py
+psutil>=5.9          # optional: reports RAM in the environment report
+
+# Dashboard (src/app.py)
+gradio>=4.0
+
+# Optional: LLM-phrased agent replies (any OpenAI-compatible endpoint, e.g. Qwen via a hosted API)
+openai>=1.0
+
+# Notebooks
+jupyter>=1.0
+ipykernel>=6.0
+nbformat>=5.0
+
+# Tests
+pytest>=7.0
+
+# Notes
+# * No scikit-learn, scipy or networkx are needed on purpose: retrieval (BM25), the graph (JSON) and Spearman are implemented in numpy/pandas.
+# * Do NOT install pyarrow if you want identical numbers on every machine: the pipeline writes CSV everywhere.
+# * Tested with Python 3.12 (Linux) and 3.14 (Windows, pandas 3.x). If `pip install gradio` fails on a very new Python,
+#   use Python 3.12 or 3.13 in a virtual environment.
