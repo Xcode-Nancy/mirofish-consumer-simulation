@@ -19,4 +19,4 @@ venv/
 # Large raw datasets - keep locally, do not commit
 dataset/*.csv
 data/raw/*.csv
-dataset/*.csv
+.pytest_cache/
